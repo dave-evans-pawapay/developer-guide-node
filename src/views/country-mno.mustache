@@ -1,0 +1,147 @@
+  <!-- Country input -->
+  <div class="mb-4 d-flex flex-row justify-content-start align-items-center panel">
+        <label class="panelLabel" for="countrySelect">Country</label>
+        <select class="form-select" name="country" id="countrySelect" aria-label="Country" onchange="getCounty()">
+            <option selected>Choose the country</option>
+            <option value="BEN">Benin</option>
+            <option value="CMR">Cameroon</option>
+            <option value="CIV">Côte d'Ivoire (Ivory Coast)</option>
+            <option value="COD">Democratic Republic of the Congo</option>
+            <option value="GHA">Ghana</option>
+            <option value="KEN">Kenya</option>
+            <option value="MWI">Malawi</option>
+            <option value="NIG">Nigeria</option>
+            <option value="RWA">Rwanda</option>
+            <option value="SEN">Sengal</option>
+            <option value="TZA">Tanzania</option>
+            <option value="UGA">Uganda</option>
+            <option value="ZMB">Zambia</option>
+        </select>
+  </div>
+
+  <div id="BEN" class="countryMno flex flex-row justify-content-start align-items-center panel mb-4" style="display:none;">
+    <label class="panelLabel"  for="countrySelect">MNO </label>
+    <select class="form-select" name="MNO_BEN" id="MNO_BEN" aria-label="MNO">
+        <option selected value="MTN_MOMO_BEN">MTN</option>
+    </select>
+  </div>
+  <div id="CMR" class="countryMno flex flex-row justify-content-start align-items-center panel mb-4" style="display:none;">
+      <label class="panelLabel"  for="countrySelect">MNO </label>
+          <select class="form-select" name="MNO_CMR" id="MNO_CMR" aria-label="MNO">
+            <option selected value="MTN_MOMO_CMR">MTN</option>
+            <option value="ORANGE_CMR">Orange</option>
+          </select>
+  </div>
+  <div id="CIV" class="countryMno flex flex-row justify-content-start align-items-center panel mb-4" style="display:none;">
+      <label class="panelLabel"  for="countrySelect">MNO </label>
+        <select class="form-select" name="MNO_CIV" id="MNO_CIV" aria-label="MNO">
+            <option selected value="MTN_MOMO_CIV">MTN</option>
+            <option value="ORANGE_CIV">Orange</option>
+        </select>
+  </div>
+    <div id="COD" class="countryMno flex flex-row justify-content-start align-items-center panel mb-4" style="display:none;">
+        <label class="panelLabel"  for="countrySelect">MNO </label>
+            <select class="form-select" name="MNO_COD" id="MNO_COD" aria-label="MNO">
+                <option selected value="VODACOM_MPESA_COD">Vodacom</option>
+                <option value="AIRTEL_OAPI_COD">Airtel</option>
+                <option value="ORANGE_COD">Orange</option>
+            </select>
+    </div>
+    <div id="GHA" class="countryMno flex flex-row justify-content-start align-items-center panel mb-4" style="display:none;">
+        <label class="panelLabel"  for="countrySelect">MNO </label>
+            <select class="form-select" name="MNO_GHA" id="MNO_GHA" aria-label="MNO">
+                <option selected value="VODAFONE_GHA">Vodafone</option>
+                <option value="AIRTELTIGO_GHA">AT</option>
+                <option value="MTN_MOBILE_GHA">MTN</option>
+            </select>
+
+    </div>
+    <div id="KEN" class="countryMno  flex-row justify-content-start align-items-center panel mb-4" style="display:none;">
+        <label class="panelLabel"  for="countrySelect">MNO </label>
+            <select class="form-select" name="MNO_KEN" id="MNO_KEN" aria-label="MNO">
+                <option selected value="MPESA_KEN">MPesa</option>
+            </select>
+
+    </div>
+    <div id="NIG" class="countryMno  flex-row justify-content-start align-items-center panel mb-4" style="display:none;">
+        <label class="panelLabel"  for="countrySelect">MNO </label>
+            <select class="form-select" name="MNO_NIG" id="MNO_NIG" aria-label="MNO">
+                <option selected value="MTN_MOMO_NIG">MTN</option>
+            </select>
+
+    </div>
+    <div id="MWI" class="countryMno  flex-row justify-content-start align-items-center panel mb-4" style="display:none;">
+        <label class="panelLabel"  for="countrySelect">MNO </label>
+            <select class="form-select" name="MNO_MWI" id="MNO_MWI" aria-label="MNO">
+                <option selected value="TNM_MWI">TNM</option>
+                <option value="AIRTEL_MWI">Airtel</option>
+            </select>
+
+    </div>
+    <div id="RWA" class="countryMno  flex-row justify-content-start align-items-center panel mb-4" style="display:none;">
+        <label class="panelLabel"  for="countrySelect">MNO </label>
+            <select class="form-select" name="MNO_RWA" id="MNO_RWA" aria-label="MNO">
+                <option selected value="MTN_MOMO_RWA">MTN</option>
+                <option value="AIRTEL_RWA">Airtel</option>
+            </select>
+    </div>
+    <div id="SEN" class="countryMno  flex-row justify-content-start align-items-center panel mb-4" style="display:none;">
+        <label class="panelLabel"  for="countrySelect">MNO </label>
+            <select class="form-select" name="MNO_SEN" id="MNO_SEN" aria-label="MNO">
+                <option selected value="FREE_SEN">Free</option>
+                <option value="ORANGE_SEN">Orange</option>
+            </select>
+    </div>
+    <div id="TZA" class="countryMno  flex-row justify-content-start align-items-center panel mb-4" style="display:none;">
+        <label class="panelLabel"  for="countrySelect">MNO </label>
+            <select class="form-select" name="MNO_TZA" id="MNO_TZA" aria-label="MNO">
+                <option selected value="AIRTEL_TZA">Airtel</option>
+                <option value="VODACOM_TZA">Vodacom</option>
+                <option value="TIGO_TZA">Tigo</option>
+                <option value="HALOTEL_TZA">Halotel</option>
+            </select>
+    </div>
+    <div id="UGA" class="countryMno  flex-row justify-content-start align-items-center panel mb-4" style="display:none;">
+        <label class="panelLabel"  for="countrySelect">MNO </label>
+            <select class="form-select" name="MNO_UGA" id="MNO_UGA" aria-label="MNO">
+                <option selected value="MTN_MOMO_UGA">MTN</option>
+                <option value="AIRTEL_OAPI_UGA">Airtel</option>
+            </select>
+    </div>
+    <div id="ZMB" class="countryMno  flex-row justify-content-start align-items-center panel mb-4" style="display:none;">
+        <label class="panelLabel"  for="countrySelect">MNO </label>
+            <select class="form-select" name="MNO_ZMB" id="MNO_ZMB" aria-label="MNO">
+                <option selected value="MTN_MOMO_ZMB">MTN</option>
+                <option value="AIRTEL_OAPI_ZMB">Airtel</option>
+            </select>
+    </div>
+  <script>
+   function getCounty(){
+    var e = document.getElementById("countrySelect");
+    var country = e.value;
+    document.getElement
+    var countryMno = document.getElementsByClassName('countryMno')
+    for (let country of countryMno){
+        country.style.display="none";
+    }
+    document.getElementById(country).style.display="flex";
+   }
+
+   for (let option of document.getElementById("countrySelect").options) {
+       if (option.value == "{{country}}") {
+           option.selected = true;
+       } else {
+           option.selected = false;
+       }
+   }
+   document.getElementById("{{country}}").style.display = "flex";
+   for (let mno_option of document.getElementById("MNO_{{country}}").options) {
+        if (mno_option.value == "{{mno}}") {
+            mno_option.selected = true;
+        } else {
+            mno_option.selected = false;
+        }
+   }
+   ;
+
+</script>
