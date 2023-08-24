@@ -611,6 +611,14 @@ npm i --save-dev @types/uuid
 ```
 The pawaPay payment flow is a 2 stage flow.  Firstly the payment is initiated - this submits the payment request to the MNO.  The pawaPay API at this point returns a status and reject reason if applicable - for example MSISDN is not recognised.  The system then waits for the end user to confirm the payment on their phone.  This may take minutes, and in some cases may not complete at all.  To handle this we provide a status API call which provides information on whether the payment has completed.
 
+Set up your .env file with your API Details there is a demo in the repository at .env-demo
+
+```angular2html
+// .env
+API_KEY=#### Your Key #####
+API_URL=https://api.sandbox.pawapay.cloud
+```
+
 Lets send the initial deposit request first.
 First we will build a simple currency code look up - normally this would be in your e-commerce application as to which currencies you support.  Add the following code into src/controllers/controller.ts
 ```angular2html
