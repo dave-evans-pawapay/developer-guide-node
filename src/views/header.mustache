@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .main {
+            width: 60%;
+            margin: 50px auto 50px auto;
+        }
+        .countryMno {
+            margin-bottom: 0.5rem;
+        }
+        .panel {
+            gap: 100px;
+        }
+        .panelLabel {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+{{#errorMessage}}
+    <div class="alert alert-danger" role="alert">
+        {{ errorMessage }}
+    </div>
+{{/errorMessage}}
+{{#pawaPayMessage}}
+    <div class="alert alert-{{pawaPayStatus}}" role="alert">
+        {{ pawaPayMessage }}
+    </div>
+{{/pawaPayMessage}}
+{{#depositId}}
+    <div class="alert alert-info" role="alert">
+        DepositId: {{ depositId }}
+    </div>
+{{/depositId}}

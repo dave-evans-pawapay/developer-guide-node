@@ -1,0 +1,32 @@
+{{> header}}
+<div class="main">
+    <form action="/" method="post" id="depositForm">
+        <!-- MSISDN input -->
+        <div class="d-flex flex-row justify-content-start align-items-center form-outline mb-4 panel">
+            <label class="panelLabel" for="msisdn">MSISDN</label>
+            <input type="text" name="msisdn" id="msisdn" class="form-control" value="{{msisdn}}"/>
+        </div>
+
+        <!-- AMOUNT input -->
+            <div class="d-flex flex-row justify-content-start align-items-center form-outline mb-4 panel">
+                <label class="panelLabel" for="amount">Amount</label>
+                <input type="text" name="amount" id="amount" class="form-control" value="{{amount}}"/>
+            </div>
+
+        {{> country-mno }}
+
+        <!-- Statement Description input -->
+        <div class="d-flex flex-row justify-content-start align-items-center form-outline mb-4 panel">
+            <label class="panelLabel" for="description">Statement Description</label>
+            <input type="text" name="description" id="description" maxlength="22" class="form-control" value="{{description}}" />
+        </div>
+
+        <!-- Submit button -->
+        <button id="submitBtn" type="submit" class="btn btn-primary btn-block">
+            <span id="spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display:none;"></span>
+            Deposit</button>
+    </form>
+</div>
+
+
+{{> footer}}
