@@ -14,4 +14,4 @@ app.use('/', mainRoutes);// This means all route path preceed this path
 app.use((err: Error, req: Request, res:Response, next: NextFunction) => {
   res.status(500).json({message: err.message});
 });
-app.listen(3000);
+app.listen(process.env.PORT ? process.env.PORT : 3000);
