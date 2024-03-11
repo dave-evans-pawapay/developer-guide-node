@@ -55,6 +55,15 @@ By default when we run tsc command, its compiled js file is created in the same 
 i.e.
 src — will contain all ts codes.
 dist — will contain js code
+This code uses dotenv to read configuration parameters from a .env file
+.env
+```angular2html
+// ./.env
+API_KEY=#### Your Key #####
+API_URL=https://api.sandbox.pawapay.cloud
+PORT=3000
+```
+
 We will now write the first node code in Typescript.
 src/app.ts (root file)
 ```angular2html
