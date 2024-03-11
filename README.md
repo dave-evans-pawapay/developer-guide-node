@@ -1,4 +1,4 @@
-![Header](developer-guide-node%2Fassets%2F100862882%2Fbb99eab3-143c-4213-80f8-df071faca030)
+![Header](https://assets-global.website-files.com/62824591015aa314fd308df1/648b073fc8721d39bbdb5a8e_Group%20469-2-p-1600.png)
 ## Developer guide for using pawaPay API with Node
 pawaPay provides a mobile money platform for merchants to incorporate mobile money into their payment flows.  So firstly what is mobile money ?
 Mobile money is a platform provided by Mobile Network Operators (MNO) to their customers.  Each customer with a mobile phone is provided with a mobile wallet to hold money.  They can top these wallets using agents to transfer cash into their wallet; or withdraw cash using the same agents.  Recently MNOs have opened up interfaces to their mobile money platforms to enable platforms and merchants to integrate these wallets into their payment flows.
